@@ -36,6 +36,25 @@ test_cases = [
     (2012, '2012 is leap year'),
     (2000, '2000 is century leap year'),
     
+    (1996, '1996 is leap year'),
+    (1200, '1200 is century leap year'),
+    (1958, '1958 is not leap year'),
+    (2430, '2430 is not leap year'),
+
+    (1943, '1943 is not leap year'),
+    (1045, '1045 is not leap year'),
+    (1234, '1234 is not leap year'),
+    (3283, '3283 is not leap year'),
+    
+    (1932, '1932 is leap year'),
+    (1312, '1312 is leap year'),
+    (1800, '1800 is century year'),
+    (1079, '1079 is not leap year'),
+    
+    (2231, '2231 is not leap year'),
+    (1022, '1022 is not leap year'),
+    (2400, '2400 is century leap year'),
+    (1186, '1186 is not leap year'),
     ]
 
 def is_leap_year(year):
