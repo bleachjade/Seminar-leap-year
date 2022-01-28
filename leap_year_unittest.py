@@ -5,6 +5,32 @@ import unittest
 from leap_year import LeapYear
 
 test_cases = [
+    (1998, '1998 is not leap year'),
+    (2100, '2100 is century year'),
+    (2008, '2008 is leap year'),
+    (2800, '2800 is century leap year'),
+    
+    (1997, '1997 is not leap year'),
+    (1000, '1000 is century year'),
+    (1988, '1988 is leap year'),
+    (2400, '2400 is century leap year'),
+    
+    (1995, '1995 is not leap year'),
+    (1000, '1000 is century year'),
+    (1992, '1992 is leap year'),
+    (3200, '3200 is century leap year'),
+    
+    (1999, '1999 is not leap year'),
+    (1300, '1300 is century year'),
+    (1996, '1996 is leap year'),
+    (1600, '1600 is century leap year'),
+    
+    (2010, '2010 is not leap year'),
+    (1800, '1800 is century year'),
+    (2004, '2004 is leap year'),
+    (1200, '1200 is century leap year'),
+    
+
     (2017, '2017 is not leap year'),
     (1900, '1900 is century year'),
     (2012, '2012 is leap year'),
