@@ -29,7 +29,6 @@ test_cases = [
     (1800, '1800 is century year'),
     (2004, '2004 is leap year'),
     (1200, '1200 is century leap year'),
-    
 
     (2017, '2017 is not leap year'),
     (1900, '1900 is century year'),

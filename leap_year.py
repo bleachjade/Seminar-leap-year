@@ -21,37 +21,35 @@ test_answer = [
     ]
 
 class LeapYearRefactored:
-
     def __init__(self, year):
         self.year = year
 
     def print_is_leap_year(self):
-        # century year divided by 400 is leap year
+        # A leap year is a century year divided by 400.
         if (self.year % 100 == 0 and self.year % 400 == 0):
             return f"{self.year} is century leap year"
-        #  divided by 100 means century year (ending with 00)
+        # Divided by 100, the year is referred to as a century year (ending with 00)
         if (self.year % 100 == 0):
             return f"{self.year} is century year"
-        # year divided by 4 is a leap year
+        # A leap year is a year divided by 4.
         if (self.year % 4 == 0):
             return f"{self.year} is leap year"
         return f"{self.year} is not leap year"
 
     def get_is_leap_year(year):
-        # century year divided by 400 is leap year
+        # A leap year is a century year divided by 400.
         if (year % 100 == 0 and year % 400 == 0):
             print(f"{year} is century leap year")
             pass
-        #  divided by 100 means century year (ending with 00)
+        # Divided by 100, the year is referred to as a century year (ending with 00)
         if (year % 100 == 0):
             print(f"{year} is century year")
             pass
-        # year divided by 4 is a leap year
+        # A leap year is a year divided by 4.
         if (year % 4 == 0):
             print(f"{year} is leap year")
             pass
         print(f"{year} is not leap year")
-
 
 LeapYear = LeapYearRefactored
 
